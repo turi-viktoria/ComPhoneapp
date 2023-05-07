@@ -1,0 +1,83 @@
+mat-card{
+    background-color: rgb(222, 215, 215);
+    box-sizing: border-box;
+    margin: 5px;
+    border-radius: 10px;
+    width: 20%; 
+    transition: background-color 0.5s;  
+
+}
+mat-card:hover{
+    background-color:rgb(194, 132, 172)
+}
+mat-card-subtitle, mat-card-content, mat-card-title, mat-icon{
+    margin-left: 10px;
+    color:black
+}
+
+div{
+    font-size: 25px;
+    margin: 25px 20px;
+    color: rgb(222, 215, 215);
+}
+
+.price{
+    color:rgb(152, 28, 28);
+    font-size: 20px;
+    padding: 20px;
+}
+.title{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 2;
+}
+.subtitle{
+    font-size: 20px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content{
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+@media (max-width: 750px) {
+    .title {
+      font-size: 15px;
+    }
+    .subtitle {
+        font-size: 12px;
+      }
+    .content {
+        font-size: 10px;
+      }
+    .price{
+        font-size: 9px;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .title {
+      font-size: 15px;
+    }
+    .subtitle {
+       display: none;
+      }
+    .content {
+        display: none;;
+        
+      }
+    .price{
+        font-size: 9px;
+    }
+  }
+
+

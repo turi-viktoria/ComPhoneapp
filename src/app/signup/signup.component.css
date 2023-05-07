@@ -1,0 +1,38 @@
+.main_component {
+    height: 100vh;
+}
+
+form {
+    display: inline-grid;
+    width: 50%;
+    align-self: center;
+}
+
+.subForm {
+    width: 100%;
+    display: inline-grid;
+    padding:0;
+}
+
+.buttons {
+    padding: 5px;
+}
+
+button {
+    width: 100px;
+}
+.div-flex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+    height: 100%;
+}
+button {
+    margin-right: 1vw;
+    background: #4285F4;
+    color: white;
+    font-size: 13px;
+    height: auto;
+    width: auto;
+}

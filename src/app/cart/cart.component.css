@@ -1,0 +1,30 @@
+tHead{
+    text-align: left;
+
+}
+mat-card{
+    background-color: rgb(87, 74, 74);
+    box-sizing: border-box;
+    margin: 30px;
+   text-align: center;
+    width: 90%; 
+    transition: background-color 0.5s;  
+
+}
+mat-card:hover{
+    background-color:rgb(194, 132, 172)
+}
+h1{
+    margin: 30px;
+}
+tr{
+    color:black;
+    font-size: 15px;
+
+}
+
+th, td{
+    text-align: center;
+}
+
+

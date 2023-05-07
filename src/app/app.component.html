@@ -1,0 +1,65 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>ComPhone</span>
+    <span class="menu-spacer"></span>
+    <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs fxHide.sm>
+      <!-- <a mat-button [routerLink]="'/accounts'"> Signup </a>
+     <a mat-button [routerLink]="'/create-account'"> Create Account </a>  -->
+      <!-- <a mat-button [routerLink]="'/signup'"> Regisztráció </a> -->
+      <ul fxLayout fxLayoutGap="5px" class="navigation-items">
+      <a mat-button [routerLink]="'/shipping'" ><mat-icon>local_shipping </mat-icon> Kiszállítás </a> 
+       <a mat-button [routerLink]="'/after-login-side'" > <mat-icon>waving_hand</mat-icon> Ajánlatok belépőknek </a>
+      <a mat-button [routerLink]="'/shopping'"><mat-icon>smartphone</mat-icon> Díjcsomagok </a>
+      <a mat-button [routerLink]="'/contacts'"><mat-icon>perm_phone_msg</mat-icon> Kapcsolat</a>
+    
+      <a mat-button [routerLink]="'/login'"*ngIf="!(loggedInUser)"> <mat-icon>login</mat-icon> Bejelentkezés </a>
+      <a mat-button [routerLink]="'/login'" *ngIf="loggedInUser" (click) = "logout()"> <mat-icon>logout</mat-icon> Kijelentkezés </a>
+      <a mat-button [routerLink]="'/list'" [matMenuTriggerFor]="menu" matBadgeColor="warn" *ngIf="!(loggedInUser)" >
+        <mat-icon 
+        
+        >shopping_cart</mat-icon>Kosár
+      </a>
+      </ul>
+      <mat-menu #menu="matMenu">
+        <div class="p-3 divide-y divide-solid">
+          <div class="pb-3 flex justify-between">
+            <span class="mr-16"></span> 
+            <a routerLink="cart">View Cart </a>
+          </div>
+        </div>
+      </mat-menu>
+
+    </div>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row>
+      <span style="font-size: 18px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Egyszerűen és itt és most!</span>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav>
+    <mat-nav-list> 
+        <a mat-list-item [routerLink]="'/shipping'" *ngIf="(loggedInUser)"> Kiszállítás</a>
+       <!-- <a mat-list-item [routerLink]="'/signup'">Regisztráció</a> -->
+       <a mat-list-item [routerLink]="'/after-login-side'"> <mat-icon>waving_hand</mat-icon> Ajánlatok belépőknek </a>
+       <a mat-list-item [routerLink]="'/shipping'"> <mat-icon>local_shipping</mat-icon> Kiszállítás</a>
+      <a mat-list-item [routerLink]="'/contacts'"> <mat-icon>perm_phone_msg</mat-icon> Kapcsolat</a>
+      <a mat-list-item [routerLink]="'/shopping'"><mat-icon>smartphone</mat-icon> Díjcsomagok </a>
+      <a mat-list-item [routerLink]="'/login'" *ngIf="!(loggedInUser)" ><mat-icon>login</mat-icon> Bejelentkezés </a>
+      <a mat-list-item [routerLink]="'/login'" *ngIf="(loggedInUser)" (click) = "logout()"><mat-icon>login</mat-icon> Kijelentkezés </a>
+      <a mat-list-item (click)="sidenav.toggle()"  mat-list-item><mat-icon>close</mat-icon> Bezár</a>
+      <!-- innen kiszedtem a hrefet, mert üres oldalra visszadobott az ablak bezárásakor-->
+
+
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div style="height: 88vh;">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

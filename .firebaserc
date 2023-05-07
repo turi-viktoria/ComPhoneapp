@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "wkert-2023": {
+      "hosting": {
+        "my-angular-project": [
+          "wkert-2023"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "wkert-2023"
+  }
+}

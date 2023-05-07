@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hu">
+<!-- akarok ide 2-3 díjcsomagot tenni, amiket ki lehet választani rákattintással, de egy legördülő menüből tudom a regisztráció során odatenni a díjcsomagot, amit választok
+regisztrációt követően a shipping oldalon fogjuk látni a megrendelt szolgáltatást
+7.gyakorlati videó a regisztráció-->
+<div>Hangcsomagok </div>
+<div class="cards">
+    <p *ngIf="mobilCsomagok.length == 0">Nincs megjelenítendő mobilcsomag!</p>
+<mat-card *ngFor="let mobilCsomag of mobilCsomagok">
+    <mat-card-title class="title">{{mobilCsomag.title}}</mat-card-title>
+    <mat-card-subtitle class="subtitle">{{mobilCsomag.subtitle}}</mat-card-subtitle>
+    <mat-card-content class="content">{{mobilCsomag.content}}</mat-card-content>
+    <mat-card-content class="price">{{mobilCsomag.price | currency}} Ft</mat-card-content>
+    <div>
+        
+        <button class="shopIcon" (click)="onAddToCart(mobilCsomag)" mat-icon-button>
+        <mat-icon >add_shopping_cart</mat-icon></button></div>
+</mat-card>
+</div>
+
+  <div>Internet csomagok</div>
+  <div class="cards">
+    <p *ngIf="internetCsomagok.length == 0">Nincs megjelenítendő mobilcsomag!</p>
+<mat-card *ngFor="let internetCsomag of internetCsomagok">
+    <mat-card-title class="title">{{internetCsomag.title}}</mat-card-title>
+    <mat-card-subtitle class="subtitle">{{internetCsomag.subtitle}}</mat-card-subtitle>
+    <mat-card-content class="content">{{internetCsomag.content}}</mat-card-content>
+    <mat-card-content class="price">{{internetCsomag.price | currency}} </mat-card-content>
+    <div>
+        <button class="shopIcon" (click)="onAddToCart(internetCsomag)" mat-icon-button>
+            <mat-icon>add_shopping_cart</mat-icon>
+        </button>
+    </div>
+</mat-card>
+</div>
+</html>

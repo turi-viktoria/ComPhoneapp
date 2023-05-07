@@ -1,0 +1,36 @@
+<h1>Kosár</h1>
+<mat-card class= "max-w-7x1 max-auto" *ngIf="caart.length">
+    <table  class="mat-elevetaion-z8 w-full">
+        <tr >
+            <th class="tHead">Díjcsomag neve</th>
+            <th class="tHead">Ár</th>
+            <th class="tHead">Mennyiség</th>
+            <th class="tHead">Totál</th>
+            <th class="tHead">Törlés</th>
+        </tr>
+        <tr *ngFor="let item of caart">
+            <td>{{item.prodName}}</td>
+            <td>{{item.quantity * item.price}}</td>
+            <td>{{item.quantity}}</td>
+                 <td></td>
+            <button mat-mini-fab (click)="remove(item)"><mat-icon >close</mat-icon></button>
+        </tr> 
+        <tr> 
+            <td></td><td></td><td></td>
+            <td>{{getTotal(caart)}}</td>
+            <td>
+                <br><br>
+                <button  mat-raised-button color="primary"[routerLink] = "'/signup'">Tovább </button> </td>
+        </tr> 
+    </table>
+
+
+</mat-card>
+<mat-card *ngIf="caart.length == 0">
+    <p id="carty">
+         Üres a kosarad.  
+        <button mat-raised-button routerLink="/shopping">Vásárolj!</button>
+    </p>
+
+
+</mat-card>

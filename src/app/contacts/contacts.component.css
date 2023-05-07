@@ -1,0 +1,23 @@
+.grid {
+    margin-top: 50px;
+    width: 100%;
+  }
+  
+  .contact {  
+    border-radius: 20px;
+    background-color: #c2185b;
+    opacity: 0.6;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
