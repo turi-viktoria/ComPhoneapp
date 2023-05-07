@@ -1,6 +1,8 @@
 # ComPhone alkalmazás
 ## Készítette: Túri Viktória 
 
+## oldal elérése: https://wkert-2023.web.app/shopping
+
 ## Belépéshez szükséges információk
 
 Amennyiben be szeretnél jelentkezni, van 2 alapértelmezett felhasználó, test@gmail.com (jelszó: asdasd), illetve test2@gmail.com (jelszó: asdasd). 
