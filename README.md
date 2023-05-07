@@ -1,16 +1,15 @@
 # ComPhone alkalmazás
-# Készítette: Túri Viktória 
+## Készítette: Túri Viktória 
 
 ## Belépéshez szükséges információk
 
 Amennyiben be szeretnél jelentkezni, van 2 alapértelmezett felhasználó, test@gmail.com (jelszó: asdasd), illetve test2@gmail.com (jelszó: asdasd). 
 
-Amennyiben saját fiókot szeretnél készíteni, akkor úgy tudod megtenni, ha a kosaradba teszel díjcsomagokat, majd tovább mész a regisztrációra. 
+Amennyiben saját fiókot szeretnél készíteni, akkor úgy van rá lehetőséged, ha a kosaradba teszel díjcsomagokat, majd tovább mész a regisztrációra. 
 
-# Kiszállítás, ajánlatok belépőknek
+## Kiszállítás, ajánlatok belépőknek (menü elemek)
 
 Ezen két menü elem guard által védve van, ami révén csak a belépést követően fogod tudni megtekinteni őket. 
-
 
 
 
