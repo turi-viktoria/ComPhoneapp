@@ -1,7 +1,7 @@
 # ComPhone alkalmazás
 ## Készítette: Túri Viktória 
 
-## oldal elérése: https://wkert-2023.web.app/shopping
+## Weboldal elérése: https://wkert-2023.web.app/shopping
 
 ## Belépéshez szükséges információk
 
